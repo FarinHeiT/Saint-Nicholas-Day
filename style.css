@@ -18,7 +18,7 @@ h1#header{
 	text-align: center;
 	color: #153745;
 	text-shadow: 2px 2px #265E75;
-	margin-bottom: 5%;
+
 }
 
 #countDown{
@@ -63,4 +63,17 @@ button:hover{
 	cursor: pointer;
 	color: #153745;
 	background-color: white;
+}
+
+img{
+	display: block;
+    margin: auto;
+    width: 40%;
+}
+
+.nicholas{
+	background: url("sleigh.png");
+	background-repeat: repeat-x;	
+	height: 100px;
+
 }
