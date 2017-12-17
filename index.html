@@ -10,20 +10,25 @@
 </head>
 
 <body>
-    <h1 id="header">Saint Nicholas Day</h1>
-   <div class="form">
+	<img src="http://pngimg.com/uploads/santa_sleigh/santa_sleigh_PNG84.png" alt="Nicholas">
+	<h1 id="header">Saint Nicholas Day</h1>
+	<div class="form">
+   		<div class="nicholas"></div>
    		<h1>What do you want?</h1>
 		<input type="text" id="myText" placeholder="I wish...">
 		<br>
 		<button onclick="myFunction()">Make a wish</button>
-		<p id="demo"></p>
    </div>
    <div id="countDown"></div>
 
 <script type="text/javascript">
 	function myFunction() {
 		var x = document.getElementById('myText').value;
-		document.getElementById('demo').innerHTML = x;
+		if(x.length != 0){
+			alert("YOUR WANT:\n\n" + x + "\n\n" +"St. Nicholas will read your letter and maybe, if your behavior was good, he'll bring you a lot of presents.");
+		}else{
+			alert("You don't want anything? :(")
+		}
 
 	}
 </script>
