@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<title></title>
-	<link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>St. N. Day</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-	
+    <p align="center">
+        <font size="60"><b>Saint Nicholas Day</font></p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p><h1 align="center">What do you want?</h1></p>
+<p align="center"><input type="text" name="wish"></p>
+<p align="center"><button onclick="fn()">Send a wish</button></p>
+<p name="send"></p>
+<script> function fn()
+ {
+	var x = document.getElementsByTagName("wish").
+	value;
+
+document.getElementsByTagName("send"). innerHTML = x;
+
+}
+</script>
 </body>
 </html>
