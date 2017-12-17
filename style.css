@@ -1,3 +1,16 @@
-body {
-    background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/E6LxqQ1ixikssn79z/snow-flakes-background-2_4_jjytrsl__F0000.png);
+body{
+	background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/E6LxqQ1ixikssn79z/snow-flakes-background-2_4_jjytrsl__F0000.png');
+	background-size: cover;
+}
+
+#countDown{
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	font-family: 'Archivo Narrow', serif;
+	font-size: 50px;
+	color: #1E1E1E;
+	text-shadow: 2px 2px #000000;
 }
