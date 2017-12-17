@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>St. N. Day</title>
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+	<script src="winter.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -20,6 +22,7 @@
 <p align="center"><input type="text" name="wish"></p>
 <p align="center"><button onclick="fn()">Send a wish</button></p>
 <p name="send"></p>
+<div id="countDown"></div>
 <script> function fn()
  {
 	var x = document.getElementsByTagName("wish").
