@@ -26,3 +26,7 @@ h1#header{
 	color: #345968;
 	text-shadow: 2px 2px #91B1D2;
 }
+
+div.form{
+	text-align: center;
+}
