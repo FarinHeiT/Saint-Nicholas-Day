@@ -77,3 +77,8 @@ img{
 	height: 100px;
 
 }
+
+.sound{
+	float: left;
+	width: 4%;
+}
