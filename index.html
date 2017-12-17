@@ -4,33 +4,45 @@
 <head>
     <meta charset="utf-8">
     <title>St. N. Day</title>
+    <link rel="shortcut icon" href="icon.ico">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 	<script src="winter.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+	<img src="sound.png" alt="Sound" onclick="muteSound();" class="sound">
+	<audio src="song.mp3" autoplay></audio>
 	<img src="http://pngimg.com/uploads/santa_sleigh/santa_sleigh_PNG84.png" alt="Nicholas">
 	<h1 id="header">Saint Nicholas Day</h1>
 	<div class="form">
+
    		<div class="nicholas"></div>
    		<h1>What do you want?</h1>
 		<input type="text" id="myText" placeholder="I wish...">
 		<br>
 		<button onclick="myFunction()">Make a wish</button>
    </div>
-   <div id="countDown"></div>
-
+	<div id="countDown"></div>
 <script type="text/javascript">
 	function myFunction() {
 		var x = document.getElementById('myText').value;
 		if(x.length != 0){
 			alert("YOU WANT:\n\n" + x + "\n\n" +"St. Nicholas will read your letter and maybe, if your behavior was good, he'll bring you a lot of presents.");
 		}else{
-			alert("Don't you want anything? :(")
+			alert("You don't want anything? :(")
 		}
 
 	}
+	function muteSound(){
+		document.getElementsByTagName('audio')[0].muted = !document.getElementsByTagName('audio')[0].muted;
+		if(document.getElementsByTagName('audio')[0].muted != true){
+			document.getElementsByClassName('sound')[0].src = 'sound.png';
+		}else{
+			document.getElementsByClassName('sound')[0].src = 'sound_off.png';
+		}
+	}
+
 </script>
 </body>
 </html>
