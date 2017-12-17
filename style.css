@@ -7,12 +7,16 @@ h1{
 	font-family: 'Archivo Narrow', serif;
 	font-size: 50px;
 	text-align: center;
+	color: #153745;
+	text-shadow: 2px 2px #265E75;
 }
 
 h1#header{
 	font-family: 'Archivo Narrow', serif;
 	font-size: 60px;
 	text-align: center;
+	color: #153745;
+	text-shadow: 2px 2px #265E75;
 }
 
 #countDown{
@@ -29,4 +33,35 @@ h1#header{
 
 div.form{
 	text-align: center;
+}
+
+#myText{
+	width: 50%;
+	height: 50px;
+	border: 2px solid #153745;
+	border-radius: 20px;
+	outline: none;
+	font-size: 25px;
+	text-align: center;
+	
+}
+
+button{
+	margin-top: 5px;
+	border: none;
+	padding: 5px 10px;
+	text-align: center;
+	font-family: 'Archivo Narrow', serif;
+	text-decoration: none;
+	font-size: 30px;
+	color: white;
+	background-color: #153745;
+	transition-duration: .7s;
+	border-radius: 10px;
+	outline: none;
+}
+button:hover{
+	cursor: pointer;
+	color: #153745;
+	background-color: white;
 }
