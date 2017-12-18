@@ -1,6 +1,7 @@
 body{
 	background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/E6LxqQ1ixikssn79z/snow-flakes-background-2_4_jjytrsl__F0000.png');
 	background-size: cover;
+	margin: 0 auto;
 }
 
 h1{
@@ -23,11 +24,12 @@ h1#header{
 
 #countDown{
 	text-align: center;
-	width: 100%;
+	width: 95%;
 	font-family: 'Archivo Narrow', serif;
 	font-size: 50px;
 	color: #153745;
 	text-shadow: 2px 2px #265E75;
+	float: left;
 }
 
 div.form{
@@ -68,17 +70,49 @@ button:hover{
 img{
 	display: block;
     margin: auto;
-    width: 40%;
+    width: 35%;
 }
-
-.nicholas{
-	background: url("sleigh.png");
-	background-repeat: repeat-x;	
+#garland{
+	background: url("garland.png");
+	background-repeat: repeat-x;
 	height: 100px;
-
 }
 
 .sound{
 	float: left;
 	width: 4%;
+	margin-right: 1%;
+}
+
+.sound:hover{
+	cursor: pointer;
+	float: left;
+	width: 4%;
+}
+
+.credentials{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 25px;
+	font-style: italic;
+	color: #153745;
+	font-family: 'Archivo Narrow', serif;
+	opacity: .5;
+	transition-duration: .5s;
+}
+.credentials a{
+	color: #153745;
+	text-decoration: none;
+}
+
+.credentials a:hover{
+	opacity: .5;
+}
+.credentials:hover{
+	opacity: 1;
+	font-size: 37px;
+	cursor: pointer;
 }

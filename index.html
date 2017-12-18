@@ -8,22 +8,26 @@
     <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 	<script src="winter.js"></script>
     <link rel="stylesheet" href="style.css">
+    <!-- Snow -->
+    <script type="text/javascript" src="https://www.cssscript.com/demo/minimalist-falling-snow-effect-with-pure-javascript-snow-js/snow.js"></script>
+	<!-- End -->
 </head>
 
 <body>
-	<img src="sound.png" alt="Sound" onclick="muteSound();" class="sound">
-	<audio src="song.mp3" autoplay></audio>
+	<div id="garland"></div>
+	<audio src="song.mp3" autoplay loop></audio>
 	<img src="http://pngimg.com/uploads/santa_sleigh/santa_sleigh_PNG84.png" alt="Nicholas">
 	<h1 id="header">Saint Nicholas Day</h1>
 	<div class="form">
-
-   		<div class="nicholas"></div>
+   		<div class="garland"></div>
    		<h1>What do you want?</h1>
 		<input type="text" id="myText" placeholder="I wish...">
 		<br>
 		<button onclick="myFunction()">Make a wish</button>
    </div>
-	<div id="countDown"></div>
+	<div id="countDown"></div><img src="sound.png" alt="Sound" onclick="muteSound();" class="sound">
+
+	<div class="credentials">by <a href="http://bfy.tw/Fcj3" target="_blank">Nastia Gorodechna</a> and <a href="http://bfy.tw/Fcj4">Yaroslav Stepaniuk</a></div>
 <script type="text/javascript">
 	function myFunction() {
 		var x = document.getElementById('myText').value;
@@ -46,4 +50,3 @@
 </script>
 </body>
 </html>
-
